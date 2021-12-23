@@ -1,10 +1,10 @@
 const API_BASE = 'https://api.themoviedb.org/3';
 const API_KEY = 'fa8367b24166839e18a329a3a990a6a3';
 
-const generoEmAlta = `/trending/all/day?api_key=${API_KEY}`;
+const generoEmAlta = `/trending/movie/day?api_key=${API_KEY}`;
 const EmAlta = document.getElementById('EmAltaLista');
 
-const genero_Recomendados = `/trending/tv/week?language=pt-BR&api_key=${API_KEY}`;
+const genero_Recomendados = `/trending/movie/week?language=pt-BR&api_key=${API_KEY}`;
 const Recomendados = document.getElementById('RecomendadosLista');
 
 const genero_acao = `/discover/movie?with_genres=28&languge=pt-BR&api_key=${API_KEY}`;
@@ -153,6 +153,7 @@ function displayLista(filmes, lista){
     
     let img = document.createElement('img');
     img.src = `https://image.tmdb.org/t/p/w500${filmes.poster_path}`;
+   
 
     let divinfo = document.createElement('div');
     divinfo.classList.add('divinfo')

@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+
 }
 body{
     --primary:#0d253f;
@@ -13,58 +14,72 @@ body{
     --terc:#90cea1;
 
     background: #f5f5f5;
+
 }
 
 nav{
-    height: 70px;
-    width: 100%; 
-    background-color: var(--primary);
+    background: var(--primary);
+    border-bottom: 2px solid var(--primary);
 
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-nav .on{
-    background-color: var(--primary);
-}
+nav svg{
+    width: 200px;
 
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+    padding-left: 30px;
 
-nav img{
-    width: 120px;
-
-    padding-left: 15px;
-
-    
 }
 
 
 
-nav div input[type='text']{
-    height: 30px;
-    width: 150px;
-
-    border-radius: 5px;
-    border: none;
+/* HEADER */
+header{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-nav div button{
-    height: 30px;
-    width: 50px;
+#filtro{
+    height: 90vh;
 
-    border: none;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.75);
+}
 
-    background-color: var(--secundary);
+#info{
+    width: 80vw;
+
+    padding: 80px 0 0 30px;
+
     color: #fff;
+
 }
 
-.fa-user{
-    display: none !important;
+#info button{
+    width: 150px;
+    height: 50px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16pt;
+
+    background: #888;
+
+    color: #000;
+
+    box-shadow: 2px 2px 5px #000;
 }
+
+/* HEADER */
+
 
 
 /* CONTEUDO */
@@ -94,6 +109,7 @@ main{
     background: var(--primary-card);
 
     border-radius: 5px;
+
 }
 
 
@@ -103,6 +119,8 @@ main{
     margin: 20px 0;
 
     color: var(--primary);
+
+    font-weight: 300;
 }
 
 .lista img{
@@ -113,6 +131,7 @@ main{
     box-shadow: 2px 2px 5px #191919;
 
     margin-bottom: 15px;
+
 }
 
 .divinfo{
@@ -146,46 +165,73 @@ main{
     display: none;
 }
 
+footer{
+    height: 20vh;
+
+    background: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    margin-top: 20px;
+
+    padding:20px 0;
+}
+
+footer a{
+    color: #888;
+}
+
+footer svg{
+    width: 100px;
+
+    margin-top: 15px;
+}
+
 
 @media (min-width:1024px){
-    
     nav{
-       position: fixed;
-       z-index: 2;
+        position: fixed;
+        z-index: 2;
+    }
+    header{
+        background-position: top;
+    }
+    #filtro{
+        height: 100vh;
+    }
+    #info{
+        width: 55vw;
 
-       justify-content: space-between;
-       align-items: center;
+        padding: 150px 0 0 30px;
 
-        padding-left: 30px;
     }
 
-    nav div{
-        padding-right: 60px;
+    #info h1{
+        font-size: 36pt;
+
+        margin-bottom: 10px;
     }
 
-    nav a{
-        color: #fff;
+    #info p{
+        font-size: 18pt;
 
+        margin-bottom: 10px;
     }
-   
-    .fa-user{
-        display: inline-block !important;
-        font-size: 20pt;
 
-        margin-left: 15px;
+    #info button:hover{
+        cursor: pointer;
     }
 
     main{
-        padding-top: 100px;
+        padding-top: 20px;
     }
     
-    
-    
-    
-    
-    
-    
-    
+       
     .Row{
         display: flex;
         flex-direction: column;
@@ -218,9 +264,9 @@ main{
         margin: 30px auto;
 
         font-size: 16pt;
-        font-weight: 300;
+        font-weight: 400;
 
-        background: var(--terc);
+        background: var(--secundary);
 
         color: #000;
 
