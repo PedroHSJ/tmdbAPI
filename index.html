@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        
+            <img src="imagens/blue_square_1.svg" alt="TMDB logo">
+    
+            <div>
+        
+                <input type="text" name="search" id="search">
+                <button><i class="fas fa-search"></i></button>
+                <a href="http://" target="_blank" ><i class="fas fa-user"></i></a>
+            </div>
+        
+        
+    </nav>
+    
+
+    <main>
+
+        <div class="Row" id="EmAlta">
+            <h1 class="titulo">Em Alta</h1>
+
+            <div class="lista" id="EmAltaLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+        <div class="Row" id="Recomendados">
+            <h1 class="titulo">Recomendados</h1>
+           
+            <div class="lista" id="RecomendadosLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+        <div class="Row" id="Acao">
+            <h1 class="titulo">Ação</h1>
+            
+            <div class="lista" id="AcaoLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+
+        <div class="Row" id="Animacao">
+            <h1 class="titulo">Animação</h1>
+            
+            <div class="lista" id="AnimacaoLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+        <div class="Row" id="Terror">
+            <h1 class="titulo">Terror</h1>
+           
+            <div class="lista" id="TerrorLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+        
+        <div class="Row" id="Romance">
+            <h1 class="titulo">Romance</h1>
+            
+            <div class="lista" id="RomanceLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+        
+        <div class="Row" id="Documentario">
+            <h1 class="titulo">Documentário</h1>
+
+            <div class="lista" id="DocumentarioLista">
+            </div>
+
+            <button class="more" type="button">Veja mais</button>
+        </div>
+
+
+<!--                     
+        <div id="Person">
+            <h1 class="titulo">Personagens Em Alta</h1>
+            <div id="PersonLista">
+                
+            </div>
+        </div> -->
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="moviesPage2.js"></script>
+    <script src="nav.js"></script>
+</body>
+
+</html>
