@@ -1,9 +1,9 @@
-const genero_originals = `/discover/movie?with_genres=28&language=pt-BR&page=1&api_key=${API_KEY}`
+const genero_Header = `/trending/movie/day?api_key=${API_KEY}&language=pt-BR`
 const info = document.getElementById('info');
 const header = document.getElementsByTagName('header')[0];
 
 window.onload = setInterval(() => {
-     axios.get(`${API_Base}${genero_originals}`)
+     axios.get(`${API_Base}${genero_Header}`)
      .then(response => {
           console.log(response.data)
           
@@ -21,7 +21,7 @@ window.onload = setInterval(() => {
      })}, 30000)
      
      
-     axios.get(`${API_Base}${genero_originals}`)
+     axios.get(`${API_Base}${genero_Header}`)
           .then(response => {
                console.log(response.data)
      
